@@ -1,9 +1,10 @@
 p{
-    background-color: rgb(113, 165, 123);
+    background-color: rgb(98, 0, 255);
+    color: white;
 }
 
 a{
-    background-color: rgb(235, 118, 118);
+    background-color: rgb(81, 248, 106);
 }
 
 div{
@@ -11,5 +12,6 @@ div{
 }
 
 span{
-    background-color: rgb(186, 136, 233);
+    background-color: rgb(255, 0, 119);
+    color: white;
 }
