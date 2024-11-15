@@ -1,0 +1,11 @@
+.red{                     /* class target krne ke liye (.) dot ka use krte hai */
+    color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{                /* id target krne ke liye (#) symbol use krte hai */
+   /* background-color: aquamarine; */
+}
