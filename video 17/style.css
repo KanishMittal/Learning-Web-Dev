@@ -1,0 +1,48 @@
+/* Element selector */
+div{
+    /* background-color: red; */
+}
+
+/* Class Selector */
+.red{
+    background-color: red;
+}
+
+/* Id selector */
+#green{
+    background-color: green;
+}
+
+/* Child Selector - mtlb wo div ka direct child hona chahiye, wrna is wont work, eg- div ke andar ek span hai, uske andar ek p hai, to it wont work */
+div > p{
+    color: white;
+    background-color: black;
+}
+
+/* Descendent Selector - no need to be a direct child for it to implement*/
+div p{
+    color: white;
+}
+
+/* Universal Selector */
+*{
+    font: 1em calibri;
+    font-style: italic;
+}
+
+/* Pseudo Selector */
+a:visited{ /* it means link is already visited once*/
+    color: black;
+}
+a:link{  /* it means link is not visited*/
+    color: blue;
+}
+a:active{ /* it means link click krte time */
+    background-color: red;
+}
+a:hover{
+    background-color: yellow;
+}
+p:first-child{ /* it means har paragraph ka first child*/
+    background-color: brown;
+}
