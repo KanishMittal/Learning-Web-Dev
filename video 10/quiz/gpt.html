@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            padding: 1em;
+        }
+        section {
+            margin-bottom: 2em;
+            padding: 1em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        iframe, video, audio {
+            display: block;
+            margin: 0 auto 1em;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Media Showcase</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Local Video</h2>
+            <video src="video.mp4" width="500" controls></video>
+        </section>
+        <section>
+            <h2>Local Audio</h2>
+            <audio src="audio.mp3" controls></audio>
+        </section>
+        <section>
+            <h2>YouTube Video</h2>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/XZwBNDGuWGU?si=m6hXDB7W43wRHQJC" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>YouTube Website</h2>
+            <iframe src="https://www.youtube.com/" width="500" height="500" frameborder="1"></iframe>
+        </section>
+    </main>
+</body>
+</html>
