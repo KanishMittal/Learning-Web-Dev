@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.box{
+    background-color: aqua;
+}
+.box1{
+    color: purple;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid;
+    height: 200px;
+    box-sizing: border-box; /* by using this, the sum of border padding and height becomes the total height of the box i.e., 200px in this case*/
+    /*but if box sizing is not used the total height of the box is height+border+padding */
+}
+.box2{
+    color: red;
+    padding: 10px;
+    margin: 35px;
+    border: 2px solid;
+    height: 200px;
+    box-sizing: border-box;
+}
+/* if we consider two boxes simultaneously and they are having different margins
+so at the place where they both are sharing their margins, the box with the 
+larger margin will be considered not the sum of margin of both the boxes and 
+this concept is known as  margin collapse */
