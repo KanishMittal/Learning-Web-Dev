@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{ /*html is a root element*/
+    font-size: 12px;
+}
+.box{
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: aqua;
+    /* width: 1280px; */
+    width: 80vw; /*vw means view port width, it is taking 80 percent width of view port*/
+    margin: auto /*left or right se automatically margina add hojega eventually making the box in centre*/
+
+}
+.container{
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: aqua;
+    width: 80vw; 
+    /* height: 80vh; 80 percent of height of view port */
+    min-height: 80vh;
+    margin: 23px auto; /*here 23px is margin from top and bottom and auto is margin for left and right*/
+    font-size: 16px; /*this is also by default font size*/ 
+}
+.container > div{
+    font-size: 2em; /*font size becomes 2 times the original or inherited size*/
+    /* font-size: 2rem; font size becomes 2 times the size of root element, this is the key difference between rem and em  */
+    width: 50% ; /*using % will make the height of the box as 50% the height of the parent*/
+    border: 2px solid red;
+}
+.container > div > div{
+    border: 2px solid blue;
+    width: 50%;
+}
+.mycont{
+    box-sizing: border-box;
+    font-size: 22px;
+    /* width: 100vmin; vmin here is similar to vh, kyuki vmin me according to different devices vmin change hoga, jis device ki height kam hogi usme uski height vmin hogi eg- laptop, jis device in width kam hogi usme uski width vmin hogi eg-mobile */
+    margin: 23px auto;
+    border: 2px solid black;
+    width: 80vw;
+}
+ol{
+    font-size: 20px;
+    margin: 4px;
+    border: 2px solid red;
+    padding-left: 20px; /* Ensure there's space on the left */
+}
