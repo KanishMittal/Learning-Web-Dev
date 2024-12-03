@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid blue;
+    /* display: inline; */
+    display: inline-block;
+    width: 344px;
+    padding: 45px;
+    margin: 34px;
+    /* display: flex;
+    justify-content: center; mostly used to centre the elements*/
+}
+.box1{
+    /* display: none; box bhi hidden, uski space bhi hidden */
+    /* visibility: hidden; box will be hidden,  but its space will remain as it is */
+}

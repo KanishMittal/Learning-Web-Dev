@@ -1,0 +1,16 @@
+.box {
+    border: 2px solid blue;
+    padding: 34px;
+    /* box-shadow: h-offset v-offset blur spread color inset; */
+    box-shadow: 5px 15px 5px rgb(11, 92, 11);
+    /* text-shadow: h-offset v-offset blur color; */
+
+}
+
+.text-element {
+    text-shadow: 2px 2px 4px red;
+    outline: 2px solid black; /*similar to border but there is a slight differnece that outline border se  bahr wali side hoti hai, here we can see the differnce by their differnet colors */
+    border: 2px solid green;
+    border-radius: 8px; /* iss se sides curvy ho gyi*/
+    outline-offset: 19px;  /*outline ka distance from text*/
+}
