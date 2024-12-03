@@ -1,0 +1,17 @@
+nav ul li{
+    /* list-style:devanagari; */
+    /* list-style-type: "🦁"; */
+    /* background-color: rgb(147, 147, 88); */
+    /* list-style-position: inside; iss se wo list ke numbers color me aa gye */
+    /* border: 2px solid black; */
+    /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+
+    /* this is what we do to make a navigation bar */
+    list-style: none;
+    padding: 23px;
+}
+
+.nav{
+    display: flex; /*for nav bar, to make it horizontal*/
+}
