@@ -1,0 +1,12 @@
+.box{
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid;
+    /* overflow: scroll; humesha scroll bar ayega */
+    overflow: auto; /* scroll bar sirf tabhi ayega jab overflow hora ho */
+    /* white-space: nowrap; sirf horzontally space lega text */
+    text-overflow: ellipsis;
+    /* overflow-x: hidden;
+    overflow-y: scroll; 
+    we can also use it like this individually for both co-ordinates*/
+}

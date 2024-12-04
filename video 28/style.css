@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 333px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+    border: 2px solid black;
+}
+/*by default position of boxes is static*/
+.box1{
+    background-color:rgb(133, 162, 186);
+    position: absolute;   /* ye krne se box2 wali space gayab  */
+    top: 0px; /* relative to nearest postioned ancestor  */
+    left: 3px;
+    /* position: sticky; used to make nav bars
+    top: 0px;
+    height: 111px;
+    width: 100%;
+    margin: 0;
+    padding: 0; */
+}
+.box2{
+    background-color: aqua;
+    /* position: relative;
+    top: 34px;
+    left: 56px; */
+}
+.box3{
+    background-color: bisque;
+    /* position: relative; /*isme krna pda to set z-index*/
+    /* z-index: 1; ye krne se ye wala box 2nd box ke upr aa gya  */
+    /* position: fixed; page scroll bhi krege to box fixed rhega
+    bottom: 0px;
+    left: 8vw;
+    height: 111px; */
+}
+.box4{
+    background-color: purple;
+}
+.parent{
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid purple;
+    /* position: relative; */
+    /* NOTE:  transform,  filter, or perspective properties can also make an element appear as positioned */
+}
