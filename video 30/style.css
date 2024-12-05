@@ -1,0 +1,32 @@
+:root{
+    /* global variables in root */
+    --color:aqua;
+    --seccolor: rgb(95, 95, 154);
+    --defpad: 23px;
+    /* css variables can store any type of values- eg- colors, opacity, padding, margin, strings, numbers etc...  */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    /* background-color: bisque; */
+    background-color: var(--color);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    /* padding: 34px; */
+    padding: var(--defpad);
+    border: 2px solid var(--seccolor);
+}
+ul li:first-child{
+    --color: rgb(246, 143, 8);  /*local variable, global overwritten*/
+    background-color: var(--color);
+}
+.container{
+    /* background-color: rgb(188, 177, 164); */
+    background-color: var(--seccolor, green); /*green will be used as color if by any chance seccolor variable gets corrupted or don't work*/
+}
