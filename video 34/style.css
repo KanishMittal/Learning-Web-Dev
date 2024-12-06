@@ -1,0 +1,15 @@
+img{
+    float: left;
+    /* float: right; */
+}
+.cards{
+    border: 2px solid ;
+    display: flow-root; /* container ke andar image fit ho gyi, otherwise wo overflow ho rhi thi */
+}
+.card{
+    border: 2px solid red;
+}
+.card:nth-child(3){
+    background-color: aqua;
+    clear: left;  /* it wont allow any image or anything to float on its left side  */
+}
