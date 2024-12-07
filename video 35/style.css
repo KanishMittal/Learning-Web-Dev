@@ -1,0 +1,41 @@
+.box:first-child{
+    /* background-color: rebeccapurple; */
+}
+.box::first-line{
+    /* background-color: aqua; */
+}
+.boxes *{  /* boxes ke andar ke sare elements */
+    background-color: aquamarine;
+    border: 2px solid;
+}
+[data-color="primary"]{ /* attribute selector */
+    margin-top: 45px;
+}
+
+p, a, .box, [data-color="primary"]{ /* grouping affects all the grouped elements  */
+    margin-top: 45px;
+}
+.box:nth-child(even){
+    background-color:bisque;
+}
+.box:nth-last-child(1){
+    background-color: maroon;
+    color: white;
+}
+.boxes::before{
+    content: "Kanish is the developer";
+}
+.boxes::after{
+    content: "Kanish is the developer";
+}
+::selection{
+    background-color: black;
+    color: rgb(228, 209, 209);
+}
+.box::first-letter{
+    color: slateblue;
+    font-size: 100px;
+}
+input::placeholder{
+    color:tomato;
+}
