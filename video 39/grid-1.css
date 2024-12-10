@@ -1,0 +1,29 @@
+.container{
+    width: 80vw;
+    height: 100vh;
+    border: 2px solid;
+    display: grid; /*it considers the container as the grid and we can apply grid properties directly*/
+    /* grid-template-columns: 120px 100px; */
+    /* grid-template-columns: [pehla]120px [doosra]100px;  naming grid columns */
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-columns: 1fr 2fr 1fr; /*1fr  means 1 fraction of available width*/
+    /* grid-template-columns: repeat(4,1fr); */
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    gap: 10px 34px;
+    justify-items: center;
+    align-items: center;
+}
+.item{
+    border: 2px solid red;
+    height: 55px;
+    width: 55px;
+}
+/* overlapped item 1 & 4 */
+.item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.item-4{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}

@@ -1,0 +1,35 @@
+.container {
+    border: 2px solid;
+    display: grid; /*it considers the container as the grid and we can apply grid properties directly*/
+    grid-template-areas: "nav nav nav"
+                         "side article article"
+                         "footer footer footer";
+}
+
+.item {
+    border: 2px solid red;
+    height: 55px;
+}
+
+.item-1 {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+.item-2 {
+    grid-area: side;
+    background-color: beige;
+}
+
+.item-3 {
+    grid-area: article;
+}
+
+.item-4 {
+    grid-area: footer;
+}
+
+/* overlapped item 1 & 5 */
+.item-5 {
+    grid-area: nav;
+}

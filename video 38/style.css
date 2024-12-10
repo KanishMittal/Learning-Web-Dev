@@ -8,12 +8,19 @@
     display: flex;
     height: 80vh;
     justify-content: center; /*horizontally centre me hoga*/
-    align-items: center; /*Vertically centre me hoga*/
+    align-items: center; /*Vertically centre me hoga, used for single line*/
     /* justify-content: space-around; */
     /* justify-content: space-between; */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap; /*used when content is overflowing*/
+    align-content: center; /*Vertically centre me hoga, used for muliple lines, or if the lines are wrapped*/
+    /* flex-flow: row wrap; both flex direction and flex wrap in a single property */
+    /* gap: 50px;
+    row-gap: 20px;
+    column-gap: 30px; 
+    gap: 10px 40px; row column */
 }
 
 .item {
@@ -22,4 +29,20 @@
     border: 2px solid;
     background-color: blueviolet;
     margin: 4px;
+    flex-grow: 1; /* sab brabar space lenge list me single row me */
+    /* flex-shrink: 2; */
+}
+/* jitna kam order, utni zyada priority, by default order is 0 */
+.order-1{
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.item1{
+    flex-grow: 2; /* it will take space of 2 items compared to other items */
+    /* align-self: flex-end; sirf khud ko align krlega, baakio se isko koi frk ni pdta */ 
 }
