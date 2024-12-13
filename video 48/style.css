@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 121px;
+    width: 121px;
+    background-color: rgb(104, 6, 6);
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: x 3s linear infinite,
+        y 1s ease-out infinite alternate;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(53, 53, 162);
+}
+
+@keyframes x {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes y {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 100%;
+    }
+}

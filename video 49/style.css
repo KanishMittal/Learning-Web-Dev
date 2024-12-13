@@ -1,0 +1,20 @@
+.container{
+    height: 488px;
+    width: 466px;
+    border: 2px solid;
+    /* to make image as a background */
+    background-image: url(https://imgs.search.brave.com/nG1XXrjBGwj_rWKgiJkqEsDlf4PbjUpJ0kzu9eRx4Ag/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aXN0b2NrcGhvdG8u/Y29tL3Jlc291cmNl/cy9pbWFnZXMvRnJl/ZVBob3Rvcy9GcmVl/LVBob3RvLTc0MHg0/OTItMTc0NDkxNTMz/My5qcGc);
+    background-position: center center;
+    background-repeat: no-repeat; /* agar choti image laga denge to wo repeat hoti hai size cover krne ke liye  */
+    background-clip: border-box;
+}
+img{
+    width: 466px;
+    height: 488px;
+    object-fit: cover; /* to maintain the aspect-ratio of the h and w given in img tag */
+    object-fit: contain; /* full image dikha dega but again extra space khali bachegi */
+    object-fit: cover;
+    object-position: top right; /* top right wala portion dikhega */
+    object-position: bottom right;
+    object-fit: fill;   /* image distort hojati hai according to the h and w given by us  */
+}
