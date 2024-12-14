@@ -1,0 +1,10 @@
+img {
+    filter: blur(3px);
+    filter: brightness();
+    filter: contrast();
+    filter: grayscale();
+    filter: sepia();
+    filter: drop-shadow();
+    filter: invert();
+    filter: opacity();
+}
