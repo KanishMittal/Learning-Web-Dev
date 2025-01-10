@@ -1,3 +1,4 @@
+// go and study notes for full understanding of the basics
 console.log("Hello, i am a conditional tutorial")
 
 let age = 16;
